@@ -5,8 +5,95 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <nav>
+        <ul>
+          <li>Информация</li>
+          <li>Фото и видео</li>
+          <li><a href="index.html"><img src="logo.jpg" alt="город Седона"></a></li>
+          <li>Карта штата</li>
+          <li>Гостиницы</li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+      <div class="main-header">
+        <p>Welcome <span>to the gorgeous</span></p>
+        <h1>Sedona</h1>
+        <p>Because the Grand canyon sucks</p>
+        <p>Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
+        <h2>Рассмотрим 5 причин, по которым Седрна круче, чем Гранд каньон</h2>
+      </div>
+      <section class="advantage">
+        <!-- Начало области выделенной красным-->
+        <h3>Настоящий городок</h3>
+        <span>№1</span>
+        <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+        <img src="city" alt="фото города">
+        <ul>
+          <li>
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li>
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+        <img src="Mountain.jpg" alt="Фото гор">
+        <h3>Там есть мост дьявола</h3>
+        <span>№2</span>
+        <p>Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
+        <ul>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <span>№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <span>№4</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <span>№5</span>
+            <p>Большинство едет в Гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Конец области выделенной красным-->
+      <div class="order">
+        <h3>Заинтересовались?</h3>
+        <P>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</P>
+        <a href="#" class="button">Найти гостиницу</a> 
+        <!-- При нажатии "Найти гостиницу", будет появляться форма pop up c поиском гостиницы в Седоне-->
+      </div>
+      <!-- Здесь будет карта -->
+    </main>
+    <footer>
+      <p class="footer-hashtag">#visitsedona</p>
+      <div class="footer-social">
+          <a class="social-button" href="#">Twitter</a>
+          <a class="social-button" href="#">Facebook</a>
+          <a class="social-button" href="#">YouTube</a>
+      </div>
+      <div class="footer-generated">
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="HtmlAcademy-logo.jpg" alt="Логотип HtmlAcademy"></a>
+      </div>
+    </footer>
+    <section class="modal modal-search">
+      <h2>Поиск гостиницы в Седоне</h2>
+      <p>Дата заезда</p>
+      <p>Дата выезда</p>
+      <p>Взрослые</p>
+      <p>Дети</p>
+      <button>Найти</button>
+    </section>
   </body>
 </html>
