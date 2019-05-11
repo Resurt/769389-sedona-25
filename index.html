@@ -17,20 +17,22 @@
       </nav>
     </header> 
     <main>
-      <div class="main-header">
-        <p>Welcome <span>to the gorgeous</span></p>
+      <div class="main-welcome">
+        <img src="Welcome.svg" alt="Welcome to the gorgeous">
         <h1>Sedona</h1>
         <p>Because the Grand canyon sucks</p>
         <p>Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
         <h2>Рассмотрим 5 причин, по которым Седрна круче, чем Гранд каньон</h2>
       </div>
+      <!-- Начало области выделенной красным-->
       <section class="advantage">
-        <!-- Начало области выделенной красным-->
-        <h3>Настоящий городок</h3>
-        <span>№1</span>
-        <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="city" alt="фото города">
-        <ul>
+        <div class="advantage-item">
+          <h3>Настоящий городок</h3>
+          <span>№1</span>
+          <p>Седона-не аттракцион для туристов, там течёт своя жизнь</p>
+          <img src="city" alt="фото города">
+        </div>
+        <ul class="advantage-about">
           <li>
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -44,11 +46,13 @@
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
-        <img src="Mountain.jpg" alt="Фото гор">
-        <h3>Там есть мост дьявола</h3>
-        <span>№2</span>
-        <p>Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
-        <ul>
+        <div class="advantage-item">
+          <img src="Mountain.jpg" alt="Фото гор">
+          <h3>Там есть мост дьявола</h3>
+          <span>№2</span>
+          <p>Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <ul class="advantage-list">
           <li>
             <h3>Небольшая площадь</h3>
             <span>№3</span>
@@ -71,7 +75,6 @@
         <h3>Заинтересовались?</h3>
         <P>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</P>
         <a href="#" class="button">Найти гостиницу</a> 
-        <!-- При нажатии "Найти гостиницу", будет появляться форма pop up c поиском гостиницы в Седоне-->
       </div>
       <!-- Здесь будет карта -->
     </main>
@@ -88,12 +91,26 @@
       </div>
     </footer>
     <section class="modal modal-search">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <p>Дата заезда</p>
-      <p>Дата выезда</p>
-      <p>Взрослые</p>
-      <p>Дети</p>
-      <button>Найти</button>
+      <form>
+        <h2>Поиск гостиницы в Седоне</h2>
+        <p>
+          <label for="date_of_arrival">Дата заезда</label>
+          <input type="date" id="date_of_arrival" name="date_of_arrival">
+        </p>
+        <p>
+          <label for="date_of_departure">Дата выезда</label>
+          <input type="date" id="date_of_departure" name="date_of_departure">
+        </p>
+        <p>
+          <label for="customer">Взрослые</label>
+          <input type="number" id="customer" value="0" min="0" max="50" step="1">
+        </p>
+        <p>
+          <label for="kids">Дети</label>
+          <input type="number" id="kids" value="0" min="0" max="50" step="1">
+        </p>
+        <button>Найти</button>
+      </form>
     </section>
   </body>
 </html>
