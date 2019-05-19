@@ -79,9 +79,9 @@
     <footer>
       <p class="footer-hashtag">#visitsedona</p>
       <div class="footer-social">
-          <a class="social-button" href="#">Twitter</a>
-          <a class="social-button" href="#">Facebook</a>
-          <a class="social-button" href="#">YouTube</a>
+          <a class="social-button" href="#" aria-label="Наша страница в Твиттере">Twitter</a>
+          <a class="social-button" href="#" aria-label="Наша страница на Фейсбук">Facebook</a>
+          <a class="social-button" href="#" aria-label="Наша страница на Ютьюб">YouTube</a>
       </div>
       <div class="footer-generated">
         <p>Website by</p>
@@ -89,25 +89,25 @@
       </div>
     </footer>
     <section class="modal modal-search">
-      <form>
+      <form method="post" action="https://echo.htmlacademy.ru">
         <h2>Поиск гостиницы в Седоне</h2>
         <p>
           <label for="date_of_arrival">Дата заезда</label>
-          <input type="date" id="date_of_arrival" name="date_of_arrival">
+          <input type="date" id="date_of_arrival" name="date_of_arrival" placeholder="24 апреля 2017">
         </p>
         <p>
           <label for="date_of_departure">Дата выезда</label>
-          <input type="date" id="date_of_departure" name="date_of_departure">
+          <input type="date" id="date_of_departure" name="date_of_departure" placeholder="4 июля 2017">
         </p>
         <p>
           <label for="customer">Взрослые</label>
-          <input type="number" id="customer" value="0" min="0" max="50" step="1">
+          <input type="number" id="customer" value="2" min="0" max="50" step="1">
         </p>
         <p>
           <label for="kids">Дети</label>
           <input type="number" id="kids" value="0" min="0" max="50" step="1">
         </p>
-        <button>Найти</button>
+        <button type="submit" aria-label="Найти варианты">Найти</button>
       </form>
     </section>
   </body>
