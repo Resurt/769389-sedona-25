@@ -150,6 +150,7 @@ input[type="radio"].visually-hidden {
     color: #000000;  
     margin-left: 355px;
     margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .welcome-top h2 {
@@ -926,6 +927,14 @@ input[type="radio"].visually-hidden {
    top: -30px;
 }
 
+.modal-calendar  {
+   margin-bottom: -16px;
+}
+
+.date-depart {
+    margin-bottom: 13px;
+}
+
 .modal-calendar a path {
     fill: #bdbbbc;
 }
@@ -962,6 +971,7 @@ input[type="radio"].visually-hidden {
 .btn-modal {
     border: none; 
     text-transform: uppercase;
+    margin-top: 15px;
 }
 
 .btn-modal:hover {
@@ -1007,11 +1017,11 @@ input[type="radio"].visually-hidden {
 
 .type-hotels legend {
     padding-top: 26px;
-    padding-left: 100px;
+    padding-left: 140px;
 }
 
 .type-hotels li {
-    margin-left: 100px;
+    margin-left: 136px;
 }
 
 .filter-list li:nth-child(2) {
@@ -1154,14 +1164,18 @@ input[type="radio"].visually-hidden {
 }
 
 .advantage-about:nth-child(1) p {
+  padding-top: 2px; 
   width: 260px;
 }
 
 .advantage-about:nth-child(2) p { 
+    padding-left: 55px;
+    padding-top: 5px;
     width: 292px;
 }
 
 .advantage-about:nth-child(3) p {
+    padding-left: 60px;
     width: 280px;
 }
 
@@ -1411,7 +1425,7 @@ input[type="radio"].visually-hidden {
 }
 
 .label-checkbox input[type="checkbox"]:checked:disabled+.checkbox-indicator::before {
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
 }
 
